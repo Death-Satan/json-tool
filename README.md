@@ -1,5 +1,7 @@
 # json面向对象工具类
 
+
+# 方法
 ```php
 /**
  * @method bool isJson(string $json) static
