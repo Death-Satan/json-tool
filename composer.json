@@ -1,0 +1,32 @@
+{
+    "name": "death_satan/json-tool",
+    "description": "Json Fast Tool Library",
+    "type": "library",
+    "require": {
+        "ext-json": "*",
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "5.4.x-dev",
+        "phpunit/phpunit": "9.6.x-dev",
+        "phpstan/phpstan": "1.11.x-dev",
+        "friendsofphp/php-cs-fixer": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DeathSatan\\JsonTool\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Death-Satan"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 300M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    }
+}
